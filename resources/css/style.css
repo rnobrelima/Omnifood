@@ -1,6 +1,5 @@
 /* COLOR ORANGE #e67e22; */
 
-
 /*               BASIC SETUP               */
 
 * {
@@ -30,7 +29,6 @@ html {
     visibility: hidden;
 }
 
-
 /*          REUSABLE COMPONENTS            */
 
 .row {
@@ -42,9 +40,7 @@ section {
     padding: 80px 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -85,7 +81,6 @@ h2:after {
     padding: 1%;
 }
 
-
 /*                 PARAGRAPHS              */
 
 .long-copy {
@@ -99,21 +94,46 @@ h2:after {
     line-height: 145%;
 }
 
-
 /*                 ICONS                   */
 
 .icon-big {
-    font-size: 400%;
+    font-size: 350%;
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    /*secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*                 LINKS                   */
+
+a:link, a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover, a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
 
 /*                 BUTTONS                 */
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -123,25 +143,21 @@ h2:after {
     margin-right: 15px;
 }
 
-.btn-full:link,
-.btn-full:visited {
+.btn-full:link, .btn-full:visited {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost:link, .btn-ghost:visited {
     border: 1px solid #e67e22;
     color: #e67e22;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover, .btn:active {
     background-color: #cf6d17;
     color: #fff
 }
-
 
 /*                    HEADER               */
 
@@ -178,8 +194,7 @@ header {
     margin-left: 40px;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav li a:link, .main-nav li a:visited {
     padding: 8px 0px;
     color: #fff;
     text-decoration: none;
@@ -189,18 +204,15 @@ header {
     transition: border-bottom 0.2s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
+.main-nav li a:hover, .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
-
 
 /*                 FEATURES                   */
 
 .section-features .long-copy {
     margin-bottom: 30px;
 }
-
 
 /*                 MEALS                   */
 
@@ -238,7 +250,6 @@ header {
     opacity: 1;
     transform: scale(1.03);
 }
-
 
 /*                 HOW IT WORKS                   */
 
@@ -283,8 +294,24 @@ header {
     margin-right: 25px;
 }
 
+.btn-app:link, .btn-app:visited {
+    border: 0;
+}
+
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/*                 CITIES                   */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
